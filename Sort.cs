@@ -11,7 +11,7 @@ namespace sort
         public Sort(int[] array) => this.array = array;
         
 
-        public void sort1(bool revert = false)
+        public void bubbleSort(bool revert = false)
         {
             for (int i = 0; i < array.Length; i++)
             {
@@ -25,6 +25,11 @@ namespace sort
                     }
                 }
             }
+        }
+
+        public void sort2(bool revert = false)
+        {
+            
         }
 
         public void print()

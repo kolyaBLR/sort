@@ -8,9 +8,7 @@ namespace sort
         {
             IOFile file = new IOFile("numbers.txt", "result.txt");
             Sort sort = new Sort(file.read());
-            //sort.print();
-            sort.sort1();
-            //sort.print();
+            sort.bubbleSort();
             file.write(sort.Array);
         }
     }
