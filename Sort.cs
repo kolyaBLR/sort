@@ -6,6 +6,8 @@ namespace sort
     {
         private int[] array;
 
+        public int[] Array { get => array; set => array = value; }
+
         public Sort(int[] array) => this.array = array;
         
 

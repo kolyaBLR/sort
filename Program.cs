@@ -6,11 +6,12 @@ namespace sort
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] {2, 3, 41, -21, -2, 0, 23, -42, -21, 3421, 21, -43};
-            Sort sort = new Sort(array);
-            sort.print();
+            IOFile file = new IOFile("numbers.txt", "result.txt");
+            Sort sort = new Sort(file.read());
+            //sort.print();
             sort.sort1();
-            sort.print();
+            //sort.print();
+            file.write(sort.Array);
         }
     }
 }
