@@ -6,10 +6,8 @@ namespace sort
     {
         private int[] array;
 
-        public Sort(int[] array)
-        {
-            this.array = array;
-        }
+        public Sort(int[] array) => this.array = array;
+        
 
         public void sort1(bool revert = false)
         {
