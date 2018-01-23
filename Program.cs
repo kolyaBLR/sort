@@ -8,7 +8,7 @@ namespace sort
         {
             IOFile file = new IOFile("numbers.txt", "result.txt");
             Sort sort = new Sort(file.read());
-            sort.sort2();
+            sort.shakerSort();
             file.write(sort.Array);
         }
     }

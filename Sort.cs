@@ -25,9 +25,7 @@ namespace sort
             }
         }
 
-        //Cocktail sort
-        //баг! первый и последние элементы не отсортированны
-        public void sort2(bool revert = false)
+        public void shakerSort(bool revert = false)
         {
             int left = 0;
             int right = array.Length - 1;
