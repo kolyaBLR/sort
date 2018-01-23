@@ -37,11 +37,11 @@ namespace sort
                 for (int i = left; i < right; i++)
                     if (array[i] > array[i + 1])
                         swap(i, i + 1);
-                left++;
                 for (int i = right; i > left; i--)
                     if (array[i - 1] > array[i])
                         swap(i - 1, i);
                 right--;
+                left++;
             }
         }
 
